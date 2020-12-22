@@ -1,9 +1,9 @@
 from tkinter import * #import tkinter for GUI
 from tkinter import filedialog #import filedialog to browse files on local system
 import pyttsx3 #text to speech engine
-import requests 
-from bs4 import BeautifulSoup 
-import time
+import requests #to connect with the website
+from bs4 import BeautifulSoup #scraping the html
+import time #to keep time of functions
 
 root = Tk()
 root.title("Text-to-speech")
