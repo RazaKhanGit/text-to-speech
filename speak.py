@@ -10,6 +10,8 @@ root.title("Text-to-speech")
 root.geometry("500x500")
 
 fToRead = "" #creating a global variable
+
+
 def browseFiles(): 
    
     global fToRead #using the global variable
@@ -31,6 +33,10 @@ def talk():
     engine.runAndWait()
     entry.delete(0, END) #remove the typed sentence
 
+def speak(cmd):
+    engine = pyttsx3.init()
+    engine.say(cmd)
+    engine.runAndWait()
 def readNews():      
     url='http://lite.cnn.com/en' #the news site to read from
      
@@ -75,6 +81,10 @@ buttonExplore.pack(pady = 20)
 labelFile = Label(root, text = "File", width = 100, height = 4, fg = "blue") #display chosen file
 labelFile.pack(pady = 20)
 
-
+cmd = "Hello Sir, I am Speak, a Text to Speech Bot. You can type the text in the text-box or browse the txt file."
+speak(cmd)
 
 root.mainloop()
+
+cmd = "Goodbye, Sir"
+speak(cmd)
