@@ -75,7 +75,7 @@ button.pack(pady = 20)
 buttonExplore = Button(root, text = "Browse Files", command = browseFiles) #button to browse file
 buttonExplore.pack(pady = 20)
 
-buttonExplore = Button(root, text = "Get latest News", command = readNews) #button to read news headlines
+buttonExplore = Button(root, text = "Get Latest News", command = readNews) #button to read news headlines
 buttonExplore.pack(pady = 20)
 
 labelFile = Label(root, text = "File", width = 100, height = 4, fg = "blue") #display chosen file
